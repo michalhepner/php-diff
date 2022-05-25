@@ -1,0 +1,20 @@
+{
+    "name": "michalhepner/php-diff",
+    "type": "library",
+    "description": "Library for making diffs in PHP",
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "MichalHepner\\PhpDiff\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michał Hepner",
+            "email": "michal.hepner@gmail.com"
+        }
+    ],
+    "require": {
+        "michalhepner/collection": "^0.1"
+    }
+}
