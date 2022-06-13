@@ -7,7 +7,7 @@ use InvalidArgumentException;
 
 class Comparator
 {
-    protected const SUPPORTED_TYPES = ['boolean', 'integer', 'string', 'array', 'NULL', 'object'];
+    protected const SUPPORTED_TYPES = ['boolean', 'integer', 'double', 'string', 'array', 'NULL', 'object'];
 
     protected bool $ignoreArraySorting = false;
 
@@ -85,6 +85,7 @@ class Comparator
         switch ($type) {
             case 'boolean':
             case 'integer':
+            case 'double':
             case 'string':
             case 'NULL':
                 if ($a !== $b) {
